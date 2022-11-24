@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap");
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gap-q {
+  gap: 0.25rem;
+}
+
+.gap-h {
+  gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.m-20 {
+  padding: 20px;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.color-black {
+  color: #121212;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-1 {
+  font-size: 1em;
+}
+
+.relative {
+  position: relative;
+}
+
+.radius-raduis-6 {
+  border-radius: 6px;
+}
+
+* {
+  font-family: "Cairo", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.logo img {
+  max-width: 40px;
+}
+
+*:focus {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.page {
+  min-height: 100vh;
+  background-color: #f1f5f9;
+}
+/*# sourceMappingURL=master.css.map */

@@ -1,0 +1,107 @@
+//___________________________
+// start colors
+$white-color: #ffffff;
+$light-color: #f1f5f9;
+
+$black-color: #121212;
+
+//___________________________
+// start colors
+//___________________________
+// start flex box
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.gap-q {
+    gap: 0.25rem;
+}
+
+.gap-h {
+    gap: 0.5rem;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+//___________________________
+// end flex box
+
+//___________________________
+// start padding & margin
+
+.p-0 {
+    padding: 0;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.m-20 {
+    padding: 20px;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+//___________________________
+// end padding & margin
+
+//___________________________
+// start background
+
+.bg-white {
+    background-color: $white-color;
+}
+
+.color-black {
+    color: $black-color;
+}
+
+//___________________________
+// end background
+
+//___________________________
+// start text
+.text-center {
+    text-align: center;
+}
+
+.font-1 {
+    font-size: 1em;
+}
+
+//___________________________
+// end text
+
+//___________________________
+// start border
+.relative {
+    position: relative;
+}
+
+.radius-raduis-6 {
+    border-radius: 6px;
+}
+
+//___________________________
+// end border
