@@ -1,9 +1,14 @@
 //___________________________
 // start colors
 $main-color: #831a95;
+$alt-color: #821a95bb;
 
 $white-color: #ffffff;
 $light-color: #f1f5f9;
+
+$gray-color: #888;
+
+$red-color: #ff5722;
 
 $black-color: #121212;
 
@@ -21,6 +26,10 @@ $black-color: #121212;
 
 .justify-center {
     justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
 }
 
 .gap-q {
@@ -51,6 +60,10 @@ $black-color: #121212;
 
 .p-10 {
     padding: 10px;
+}
+
+.p-15 {
+    padding: 15px;
 }
 
 .p-20 {
@@ -101,9 +114,16 @@ $black-color: #121212;
     position: relative;
 }
 
+.hidden {
+    overflow: hidden;
+}
+
 .radius-raduis-6 {
     border-radius: 6px;
 }
 
+.w-full {
+    width: 100%;
+}
 //___________________________
 // end border

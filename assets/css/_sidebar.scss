@@ -1,5 +1,6 @@
 .sidebar {
     overflow: hidden;
+    min-width: 210px;
     .logo {
         margin-bottom: 1rem;
         img {
@@ -35,7 +36,8 @@
 
 @media screen and (max-width: 768px) {
     .sidebar {
-        width: 78px;
+        width: 84px;
+        min-width: initial;
         &:hover {
             width: 250px;
             span {
