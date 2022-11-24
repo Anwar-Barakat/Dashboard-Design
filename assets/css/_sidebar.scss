@@ -1,0 +1,55 @@
+.sidebar {
+    overflow: hidden;
+    .logo {
+        margin-bottom: 1rem;
+        img {
+            max-width: 35px;
+        }
+        span {
+            font-weight: 600;
+            font-size: 15px;
+        }
+    }
+    span {
+        display: block;
+        position: relative;
+    }
+    ul {
+        li {
+            a {
+                margin-bottom: 0.4rem;
+                overflow: hidden;
+                &.active,
+                &:hover {
+                    color: $main-color;
+                    font-weight: 600;
+                    background-color: $light-color;
+                    span {
+                        padding-left: 0.25rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 78px;
+        &:hover {
+            width: 250px;
+            span {
+                right: initial;
+            }
+        }
+        .logo {
+            img {
+                max-width: 38px;
+                max-height: 35px;
+            }
+        }
+        span {
+            right: -150%;
+        }
+    }
+}

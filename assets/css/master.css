@@ -83,6 +83,8 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 a {
@@ -91,10 +93,6 @@ a {
 
 a:hover {
   text-decoration: none;
-}
-
-.logo img {
-  max-width: 40px;
 }
 
 *:focus {
@@ -109,5 +107,61 @@ ul {
 .page {
   min-height: 100vh;
   background-color: #f1f5f9;
+}
+
+.sidebar {
+  overflow: hidden;
+}
+
+.sidebar .logo {
+  margin-bottom: 1rem;
+}
+
+.sidebar .logo img {
+  max-width: 35px;
+}
+
+.sidebar .logo span {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.sidebar span {
+  display: block;
+  position: relative;
+}
+
+.sidebar ul li a {
+  margin-bottom: 0.4rem;
+  overflow: hidden;
+}
+
+.sidebar ul li a.active, .sidebar ul li a:hover {
+  color: #831a95;
+  font-weight: 600;
+  background-color: #f1f5f9;
+}
+
+.sidebar ul li a.active span, .sidebar ul li a:hover span {
+  padding-left: 0.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 78px;
+  }
+  .sidebar:hover {
+    width: 250px;
+  }
+  .sidebar:hover span {
+    right: initial;
+  }
+  .sidebar .logo img {
+    max-width: 38px;
+    max-height: 35px;
+  }
+  .sidebar span {
+    right: -150%;
+  }
 }
 /*# sourceMappingURL=master.css.map */
