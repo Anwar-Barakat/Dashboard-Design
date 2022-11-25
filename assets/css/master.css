@@ -39,6 +39,21 @@
   gap: 2rem;
 }
 
+.d-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-d-block {
+    display: block;
+  }
+}
+
 .p-0 {
   padding: 0;
 }
@@ -79,6 +94,12 @@
   font-size: 1em;
 }
 
+@media screen and (max-width: 768px) {
+  .mobile-text-center {
+    text-align: center;
+  }
+}
+
 .relative {
   position: relative;
 }
@@ -87,7 +108,7 @@
   overflow: hidden;
 }
 
-.radius-raduis-6 {
+.border-raduis-6 {
   border-radius: 6px;
 }
 
@@ -282,9 +303,24 @@ ul {
           box-shadow: #888 0px 1px 0px 0px;
 }
 
+.wrapper {
+  -ms-grid-columns: (minmax(450px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  margin-right: 20px;
+  margin-left: 20px;
+  text-transform: capitalize;
+}
+
 @media screen and (max-width: 768px) {
   .head .search input {
     max-width: 60px;
+  }
+  .wrapper {
+    -ms-grid-columns: minmax(200px, 1fr);
+        grid-template-columns: minmax(200px, 1fr);
+    margin-right: 10px;
+    margin-left: 10px;
+    gap: 10px;
   }
 }
 /*# sourceMappingURL=master.css.map */
