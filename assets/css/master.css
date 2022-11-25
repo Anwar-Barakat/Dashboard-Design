@@ -127,6 +127,45 @@ ul {
   background-color: #f1f5f9;
 }
 
+.page h1 {
+  margin: 20px 20px 40px;
+}
+
+.page h1::before, .page h1::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+}
+
+.page h1::before {
+  background-color: white;
+  width: 120px;
+}
+
+.page h1::after {
+  background-color: #121212;
+  width: 40px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #831a95;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #821a95bb;
+}
+
 .sidebar {
   overflow: hidden;
   min-width: 210px;
