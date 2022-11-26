@@ -126,6 +126,13 @@ $black-color: #121212;
     margin-top: 20px;
 }
 
+.mb-0 {
+    margin-bottom: 0px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
 .mb-20 {
     margin-bottom: 20px;
 }
@@ -200,6 +207,14 @@ $black-color: #121212;
     border-radius: 6px;
 }
 
+.border-raduis-10 {
+    border-radius: 10px;
+}
+
+.border-none {
+    border: none;
+}
+
 .w-full {
     width: 100%;
 }
@@ -215,3 +230,4 @@ $black-color: #121212;
 }
 //___________________________
 // end border
+

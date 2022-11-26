@@ -12,7 +12,6 @@
             border-radius: 50%;
             border: 2px solid white;
             padding: 2px;
-            box-shadow: 0 0 5px #aaa;
             margin-left: 20px;
             margin-top: -25px;
         }
@@ -26,6 +25,7 @@
             background-color: $main-color;
             margin: 0 15px 15px auto;
             padding: 0 1rem;
+            
             &:hover {
                 background-color: $alt-color;
             }
