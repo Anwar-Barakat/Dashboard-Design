@@ -205,6 +205,10 @@
   font-size: 14px;
 }
 
+.font-15 {
+  font-size: 15px;
+}
+
 .font-1 {
   font-size: 1em;
 }
@@ -647,6 +651,36 @@ textarea {
 .wrapper .latest-news .news-row .info h3 {
   margin: 0 0 5px;
   font-size: 1rem;
+}
+
+.wrapper .tasks .task-row.done {
+  opacity: 0.7;
+}
+
+.wrapper .tasks .task-row.done h3,
+.wrapper .tasks .task-row.done p {
+  text-decoration: line-through;
+}
+
+.wrapper .tasks .task-row:not(:last-of-type) {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #aaa;
+}
+
+.wrapper .tasks .task-row .info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.wrapper .tasks .task-row .delete {
+  color: #e91e63;
+  cursor: pointer;
+}
+
+.wrapper .tasks .task-row .delete:hover {
+  color: #e91e6320;
 }
 
 @media screen and (max-width: 768px) {
