@@ -29,6 +29,11 @@
           justify-content: space-between;
 }
 
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .gap-q {
   gap: 0.25rem;
 }
@@ -174,6 +179,10 @@
   color: #f59e0b;
 }
 
+.color-red {
+  color: #e91e63;
+}
+
 .color-green {
   color: #22c55e;
 }
@@ -192,6 +201,10 @@
 
 .font-1 {
   font-size: 1em;
+}
+
+.font-25 {
+  font-size: 25px;
 }
 
 .font-bold {
@@ -594,6 +607,17 @@ textarea {
   width: 0;
   height: 0;
   border-style: solid;
+}
+
+.wrapper .tickets .boxes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(48%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+}
+
+.wrapper .tickets .boxes .box {
+  border: 1px solid #aaa;
 }
 
 @media screen and (max-width: 768px) {

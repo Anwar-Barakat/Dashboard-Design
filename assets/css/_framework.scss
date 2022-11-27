@@ -15,6 +15,9 @@ $alt-blue-color: #03a8f420;
 $orange-color: #f59e0b;
 $alt-orange-color: #f59e0b20;
 
+$red-color: #e91e63;
+$alt-red-color: #e91e6320;
+
 $green-color: #22c55e;
 $alt-green-color: #22c55e20;
 
@@ -25,39 +28,43 @@ $black-color: #121212;
 //___________________________
 // start flex box
 .d-flex {
-    display: flex;
+  display: flex;
 }
 
 .align-center {
-    align-items: center;
+  align-items: center;
 }
 
 .align-end {
-    align-items: flex-end;
+  align-items: flex-end;
 }
 
 .justify-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .justify-between {
-    justify-content: space-between;
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .gap-q {
-    gap: 0.25rem;
+  gap: 0.25rem;
 }
 
 .gap-h {
-    gap: 0.5rem;
+  gap: 0.5rem;
 }
 
 .gap-1 {
-    gap: 1rem;
+  gap: 1rem;
 }
 
 .gap-2 {
-    gap: 2rem;
+  gap: 2rem;
 }
 
 //___________________________
@@ -66,31 +73,31 @@ $black-color: #121212;
 //___________________________
 // start grid system
 .d-grid {
-    display: grid;
+  display: grid;
 }
 
 .d-block {
-    display: block;
+  display: block;
 }
 
 .gap-20 {
-    gap: 20px;
+  gap: 20px;
 }
 
 @media screen and (max-width: 768px) {
-    .mobile-d-block {
-        display: block;
-    }
+  .mobile-d-block {
+    display: block;
+  }
 
-    .mobile-d-none {
-        display: none;
-    }
+  .mobile-d-none {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 551px) {
-    .mobile-d-grid {
-        display: grid;
-    }
+  .mobile-d-grid {
+    display: grid;
+  }
 }
 //___________________________
 // end grid system
@@ -99,62 +106,62 @@ $black-color: #121212;
 // start padding & margin
 
 .p-0 {
-    padding: 0;
+  padding: 0;
 }
 
 .p-10 {
-    padding: 10px;
+  padding: 10px;
 }
 
 .p-15 {
-    padding: 15px;
+  padding: 15px;
 }
 
 .p-20 {
-    padding: 20px;
+  padding: 20px;
 }
 
 .m-20 {
-    padding: 20px;
+  padding: 20px;
 }
 
 .m-0 {
-    margin: 0;
+  margin: 0;
 }
 
 .mt-0 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .mt-5 {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .mt-10 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .mt-15 {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .mt-20 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .mb-0 {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .mb-10 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .mb-20 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .mb-25 {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 //___________________________
@@ -164,47 +171,50 @@ $black-color: #121212;
 // start background
 
 .bg-white {
-    background-color: $white-color;
+  background-color: $white-color;
 }
 
 .bg-eee {
-    background-color: $eee-color;
+  background-color: $eee-color;
 }
 
 .bg-blue {
-    background-color: $blue-color;
+  background-color: $blue-color;
 }
 
 .bg-orange {
-    background-color: $orange-color;
+  background-color: $orange-color;
 }
 
 .bg-green {
-    background-color: $green-color;
+  background-color: $green-color;
 }
 
 .color-white {
-    color: $white-color;
+  color: $white-color;
 }
 
 .color-black {
-    color: $black-color;
+  color: $black-color;
 }
 
 .color-gray {
-    color: $gray-color;
+  color: $gray-color;
 }
 
 .color-blue {
-    color: $blue-color;
+  color: $blue-color;
 }
 
 .color-orange {
-    color: $orange-color;
+  color: $orange-color;
+}
+.color-red {
+  color: $red-color;
 }
 
 .color-green {
-    color: $green-color;
+  color: $green-color;
 }
 
 //___________________________
@@ -213,29 +223,33 @@ $black-color: #121212;
 //___________________________
 // start text
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .font-13 {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .font-14 {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .font-1 {
-    font-size: 1em;
+  font-size: 1em;
+}
+
+.font-25 {
+  font-size: 25px;
 }
 
 .font-bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
-    .mobile-text-center {
-        text-align: center;
-    }
+  .mobile-text-center {
+    text-align: center;
+  }
 }
 
 //___________________________
@@ -244,37 +258,37 @@ $black-color: #121212;
 //___________________________
 // start border
 .relative {
-    position: relative;
+  position: relative;
 }
 
 .hidden {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .border-raduis-6 {
-    border-radius: 6px;
+  border-radius: 6px;
 }
 
 .border-raduis-10 {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .border-none {
-    border: none;
+  border: none;
 }
 
 .w-full {
-    width: 100%;
+  width: 100%;
 }
 
 .w-fit {
-    width: fit-content;
+  width: fit-content;
 }
 
 @media screen and (max-width: 768px) {
-    .mobile-width-100 {
-        width: 100%;
-    }
+  .mobile-width-100 {
+    width: 100%;
+  }
 }
 
 //___________________________

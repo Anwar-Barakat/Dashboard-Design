@@ -1,129 +1,135 @@
 .wrapper {
-    .welcome {
-        overflow: hidden;
-        .intro {
-            img {
-                max-width: 210px;
-            }
-        }
-        .avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            border: 2px solid white;
-            padding: 2px;
-            margin-left: 20px;
-            margin-top: -25px;
-        }
-        .body {
-            border-bottom: 1px solid $gray-color;
-            & > div {
-                flex: 1;
-            }
-        }
-        .visit {
-            background-color: $main-color;
-            margin: 0 15px 15px auto;
-            padding: 3px 1rem;
-            &:hover {
-                background-color: $alt-color;
-            }
-        }
+  .welcome {
+    overflow: hidden;
+    .intro {
+      img {
+        max-width: 210px;
+      }
     }
-    .targets {
-        .target-row {
-            &.money {
-                .icon {
-                    background-color: $alt-blue-color;
-                }
-                .progress {
-                    background-color: $alt-blue-color;
-                    & > span {
-                        span {
-                            &::after {
-                                border-color: $blue-color transparent
-                                    transparent;
-                            }
-                        }
-                    }
-                }
-            }
-            &.projects {
-                .icon {
-                    background-color: $alt-orange-color;
-                }
-                .progress {
-                    background-color: $alt-orange-color;
-                    & > span {
-                        span {
-                            &::after {
-                                border-color: $orange-color transparent
-                                    transparent;
-                            }
-                        }
-                    }
-                }
-            }
-            &.team {
-                .icon {
-                    background-color: $alt-green-color;
-                }
-                .progress {
-                    background-color: $alt-green-color;
-                    & > span {
-                        span {
-                            &::after {
-                                border-color: $green-color transparent
-                                    transparent;
-                            }
-                        }
-                    }
-                }
-            }
-            .icon {
-                width: 80px;
-                height: 80px;
-                margin-right: 1rem;
-            }
-            .details {
-                flex: 1;
-                .progress {
-                    height: 6px;
-                    border-radius: 10px;
-                    & > span {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        height: 100%;
-                        span {
-                            position: absolute;
-                            right: -16px;
-                            bottom: 15px;
-                            padding: 0 5px;
-                            font-size: 12px;
-                            color: white;
-                            width: 32px;
-                            &::after {
-                                content: "";
-                                position: absolute;
-                                left: 50%;
-                                transform: translateX(-50%);
-                                bottom: -12px;
-                                border-width: 6px;
-                                width: 0;
-                                height: 0;
-                                border-style: solid;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid white;
+      padding: 2px;
+      margin-left: 20px;
+      margin-top: -25px;
     }
+    .body {
+      border-bottom: 1px solid $gray-color;
+      & > div {
+        flex: 1;
+      }
+    }
+    .visit {
+      background-color: $main-color;
+      margin: 0 15px 15px auto;
+      padding: 3px 1rem;
+      &:hover {
+        background-color: $alt-color;
+      }
+    }
+  }
+  .targets {
+    .target-row {
+      &.money {
+        .icon {
+          background-color: $alt-blue-color;
+        }
+        .progress {
+          background-color: $alt-blue-color;
+          & > span {
+            span {
+              &::after {
+                border-color: $blue-color transparent transparent;
+              }
+            }
+          }
+        }
+      }
+      &.projects {
+        .icon {
+          background-color: $alt-orange-color;
+        }
+        .progress {
+          background-color: $alt-orange-color;
+          & > span {
+            span {
+              &::after {
+                border-color: $orange-color transparent transparent;
+              }
+            }
+          }
+        }
+      }
+      &.team {
+        .icon {
+          background-color: $alt-green-color;
+        }
+        .progress {
+          background-color: $alt-green-color;
+          & > span {
+            span {
+              &::after {
+                border-color: $green-color transparent transparent;
+              }
+            }
+          }
+        }
+      }
+      .icon {
+        width: 80px;
+        height: 80px;
+        margin-right: 1rem;
+      }
+      .details {
+        flex: 1;
+        .progress {
+          height: 6px;
+          border-radius: 10px;
+          & > span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            span {
+              position: absolute;
+              right: -16px;
+              bottom: 15px;
+              padding: 0 5px;
+              font-size: 12px;
+              color: white;
+              width: 32px;
+              &::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -12px;
+                border-width: 6px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .tickets {
+    .boxes {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+      .box {
+        border: 1px solid $gray-color;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .welcome .intro {
-        padding-bottom: 30px;
-    }
+  .welcome .intro {
+    padding-bottom: 30px;
+  }
 }
