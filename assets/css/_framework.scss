@@ -99,6 +99,7 @@ $black-color: #121212;
     display: grid;
   }
 }
+
 //___________________________
 // end grid system
 
@@ -160,8 +161,15 @@ $black-color: #121212;
 .mb-20 {
   margin-bottom: 20px;
 }
+
 .mb-25 {
   margin-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-margin-auto {
+    margin: auto;
+  }
 }
 
 //___________________________
@@ -209,6 +217,7 @@ $black-color: #121212;
 .color-orange {
   color: $orange-color;
 }
+
 .color-red {
   color: $red-color;
 }

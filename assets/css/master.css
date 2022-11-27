@@ -139,6 +139,12 @@
   margin-bottom: 25px;
 }
 
+@media screen and (max-width: 768px) {
+  .mobile-margin-auto {
+    margin: auto;
+  }
+}
+
 .bg-white {
   background-color: #ffffff;
 }
@@ -618,6 +624,29 @@ textarea {
 
 .wrapper .tickets .boxes .box {
   border: 1px solid #aaa;
+}
+
+.wrapper .latest-news .news-row:not(:last-of-type) {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #aaa;
+}
+
+.wrapper .latest-news .news-row img {
+  width: 100px;
+  border-radius: 6px;
+  margin-right: 1rem;
+}
+
+.wrapper .latest-news .news-row .info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.wrapper .latest-news .news-row .info h3 {
+  margin: 0 0 5px;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 768px) {
