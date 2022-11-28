@@ -91,6 +91,14 @@
   padding: 15px;
 }
 
+.pt-15 {
+  padding-top: 15px;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+
 .p-20 {
   padding: 20px;
 }
@@ -319,7 +327,7 @@ textarea {
 }
 
 .page {
-  min-height: 100vh;
+  max-height: 100vh;
   background-color: #f1f5f9;
   padding-bottom: 1rem;
 }
@@ -498,15 +506,24 @@ textarea {
   }
 }
 
-.wrapper .welcome {
+.content {
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.content .wrapper {
+  margin: 0 20px 20px;
+}
+
+.content .wrapper .welcome {
   overflow: hidden;
 }
 
-.wrapper .welcome .intro img {
+.content .wrapper .welcome .intro img {
   max-width: 210px;
 }
 
-.wrapper .welcome .avatar {
+.content .wrapper .welcome .avatar {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -516,87 +533,87 @@ textarea {
   margin-top: -25px;
 }
 
-.wrapper .welcome .body {
+.content .wrapper .welcome .body {
   border-bottom: 1px solid #aaa;
 }
 
-.wrapper .welcome .body > div {
+.content .wrapper .welcome .body > div {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.wrapper .welcome .visit {
+.content .wrapper .welcome .visit {
   background-color: #831a95;
   margin: 0 15px 15px auto;
   padding: 3px 1rem;
 }
 
-.wrapper .welcome .visit:hover {
+.content .wrapper .welcome .visit:hover {
   background-color: #821a95bb;
 }
 
-.wrapper .targets .target-row.money .icon {
+.content .wrapper .targets .target-row.money .icon {
   background-color: #03a8f420;
 }
 
-.wrapper .targets .target-row.money .progress {
+.content .wrapper .targets .target-row.money .progress {
   background-color: #03a8f420;
 }
 
-.wrapper .targets .target-row.money .progress > span span::after {
+.content .wrapper .targets .target-row.money .progress > span span::after {
   border-color: #03a9f4 transparent transparent;
 }
 
-.wrapper .targets .target-row.projects .icon {
+.content .wrapper .targets .target-row.projects .icon {
   background-color: #f59e0b20;
 }
 
-.wrapper .targets .target-row.projects .progress {
+.content .wrapper .targets .target-row.projects .progress {
   background-color: #f59e0b20;
 }
 
-.wrapper .targets .target-row.projects .progress > span span::after {
+.content .wrapper .targets .target-row.projects .progress > span span::after {
   border-color: #f59e0b transparent transparent;
 }
 
-.wrapper .targets .target-row.team .icon {
+.content .wrapper .targets .target-row.team .icon {
   background-color: #22c55e20;
 }
 
-.wrapper .targets .target-row.team .progress {
+.content .wrapper .targets .target-row.team .progress {
   background-color: #22c55e20;
 }
 
-.wrapper .targets .target-row.team .progress > span span::after {
+.content .wrapper .targets .target-row.team .progress > span span::after {
   border-color: #22c55e transparent transparent;
 }
 
-.wrapper .targets .target-row .icon {
+.content .wrapper .targets .target-row .icon {
   width: 80px;
   height: 80px;
   margin-right: 1rem;
 }
 
-.wrapper .targets .target-row .details {
+.content .wrapper .targets .target-row .details {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.wrapper .targets .target-row .details .progress {
+.content .wrapper .targets .target-row .details .progress {
   height: 6px;
   border-radius: 10px;
 }
 
-.wrapper .targets .target-row .details .progress > span {
+.content .wrapper .targets .target-row .details .progress > span {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
 }
 
-.wrapper .targets .target-row .details .progress > span span {
+.content .wrapper .targets .target-row .details .progress > span span {
   position: absolute;
   right: -16px;
   bottom: 15px;
@@ -606,7 +623,7 @@ textarea {
   width: 32px;
 }
 
-.wrapper .targets .target-row .details .progress > span span::after {
+.content .wrapper .targets .target-row .details .progress > span span::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -619,68 +636,121 @@ textarea {
   border-style: solid;
 }
 
-.wrapper .tickets .boxes {
+.content .wrapper .tickets .boxes {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(48%, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
 }
 
-.wrapper .tickets .boxes .box {
+.content .wrapper .tickets .boxes .box {
   border: 1px solid #aaa;
 }
 
-.wrapper .latest-news .news-row:not(:last-of-type) {
+.content .wrapper .latest-news .news-row:not(:last-of-type) {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #aaa;
 }
 
-.wrapper .latest-news .news-row img {
+.content .wrapper .latest-news .news-row img {
   width: 100px;
   border-radius: 6px;
   margin-right: 1rem;
 }
 
-.wrapper .latest-news .news-row .info {
+.content .wrapper .latest-news .news-row .info {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-.wrapper .latest-news .news-row .info h3 {
+.content .wrapper .latest-news .news-row .info h3 {
   margin: 0 0 5px;
   font-size: 1rem;
 }
 
-.wrapper .tasks .task-row.done {
+.content .wrapper .tasks .task-row.done {
   opacity: 0.7;
 }
 
-.wrapper .tasks .task-row.done h3,
-.wrapper .tasks .task-row.done p {
+.content .wrapper .tasks .task-row.done h3,
+.content .wrapper .tasks .task-row.done p {
   text-decoration: line-through;
 }
 
-.wrapper .tasks .task-row:not(:last-of-type) {
+.content .wrapper .tasks .task-row:not(:last-of-type) {
   margin-bottom: 15px;
   padding-bottom: 15px;
   border-bottom: 1px solid #aaa;
 }
 
-.wrapper .tasks .task-row .info {
+.content .wrapper .tasks .task-row .info {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-.wrapper .tasks .task-row .delete {
+.content .wrapper .tasks .task-row .delete {
   color: #e91e63;
   cursor: pointer;
 }
 
-.wrapper .tasks .task-row .delete:hover {
+.content .wrapper .tasks .task-row .delete:hover {
   color: #e91e6320;
+}
+
+.content .projects {
+  text-transform: capitalize;
+  margin: 0 20px 20px;
+}
+
+.content .projects .table-responsive {
+  overflow-x: auto;
+}
+
+.content .projects .table-responsive table {
+  min-width: 1000px;
+}
+
+.content .projects .table-responsive table thead td {
+  background-color: #f1f5f9;
+  font-weight: bold;
+}
+
+.content .projects .table-responsive table tbody td {
+  border-bottom: 1px solid #f1f5f9;
+  border-left: 1px solid #f1f5f9;
+}
+
+.content .projects .table-responsive table tbody td:last-child {
+  border-right: 1px solid #f1f5f9;
+}
+
+.content .projects .table-responsive table td {
+  padding: 15px;
+}
+
+.content .projects .table-responsive table img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.content .projects .table-responsive table img:not(:first-child) {
+  margin-left: -20px;
+}
+
+.content .projects .table-responsive table .label.pending {
+  background-color: #f59e0b;
+}
+
+.content .projects .table-responsive table .label.approving {
+  background-color: #22c55e;
+}
+
+.content .projects .table-responsive table .label.deleted {
+  background-color: #e91e63;
 }
 
 @media screen and (max-width: 768px) {

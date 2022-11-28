@@ -1,174 +1,225 @@
-.wrapper {
-  .welcome {
-    overflow: hidden;
-    .intro {
-      img {
-        max-width: 210px;
-      }
-    }
-    .avatar {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      border: 2px solid white;
-      padding: 2px;
-      margin-left: 20px;
-      margin-top: -25px;
-    }
-    .body {
-      border-bottom: 1px solid $gray-color;
-      & > div {
-        flex: 1;
-      }
-    }
-    .visit {
-      background-color: $main-color;
-      margin: 0 15px 15px auto;
-      padding: 3px 1rem;
-      &:hover {
-        background-color: $alt-color;
-      }
-    }
-  }
-  .targets {
-    .target-row {
-      &.money {
-        .icon {
-          background-color: $alt-blue-color;
-        }
-        .progress {
-          background-color: $alt-blue-color;
-          & > span {
-            span {
-              &::after {
-                border-color: $blue-color transparent transparent;
-              }
-            }
-          }
+.content {
+  max-height: 100vh;
+  overflow-y: auto;
+  .wrapper {
+    margin: 0 20px 20px;
+    .welcome {
+      overflow: hidden;
+      .intro {
+        img {
+          max-width: 210px;
         }
       }
-      &.projects {
-        .icon {
-          background-color: $alt-orange-color;
-        }
-        .progress {
-          background-color: $alt-orange-color;
-          & > span {
-            span {
-              &::after {
-                border-color: $orange-color transparent transparent;
-              }
-            }
-          }
-        }
+      .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid white;
+        padding: 2px;
+        margin-left: 20px;
+        margin-top: -25px;
       }
-      &.team {
-        .icon {
-          background-color: $alt-green-color;
-        }
-        .progress {
-          background-color: $alt-green-color;
-          & > span {
-            span {
-              &::after {
-                border-color: $green-color transparent transparent;
-              }
-            }
-          }
-        }
-      }
-      .icon {
-        width: 80px;
-        height: 80px;
-        margin-right: 1rem;
-      }
-      .details {
-        flex: 1;
-        .progress {
-          height: 6px;
-          border-radius: 10px;
-          & > span {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            span {
-              position: absolute;
-              right: -16px;
-              bottom: 15px;
-              padding: 0 5px;
-              font-size: 12px;
-              color: white;
-              width: 32px;
-              &::after {
-                content: "";
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                bottom: -12px;
-                border-width: 6px;
-                width: 0;
-                height: 0;
-                border-style: solid;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .tickets {
-    .boxes {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
-      .box {
-        border: 1px solid $gray-color;
-      }
-    }
-  }
-  .latest-news {
-    .news-row {
-      &:not(:last-of-type) {
-        margin-bottom: 20px;
-        padding-bottom: 20px;
+      .body {
         border-bottom: 1px solid $gray-color;
-      }
-      img {
-        width: 100px;
-        border-radius: 6px;
-        margin-right: 1rem;
-      }
-      .info {
-        flex-grow: 1;
-        h3 {
-          margin: 0 0 5px;
-          font-size: 1rem;
+        & > div {
+          flex: 1;
         }
       }
-    }
-  }
-  .tasks {
-    .task-row {
-      &.done {
-        opacity: 0.7;
-        h3,
-        p {
-          text-decoration: line-through;
-        }
-      }
-      &:not(:last-of-type) {
-        margin-bottom: 15px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid $gray-color;
-      }
-      .info {
-        flex-grow: 1;
-      }
-      .delete {
-        color: $red-color;
-        cursor: pointer;
+      .visit {
+        background-color: $main-color;
+        margin: 0 15px 15px auto;
+        padding: 3px 1rem;
         &:hover {
-          color: $alt-red-color;
+          background-color: $alt-color;
+        }
+      }
+    }
+    .targets {
+      .target-row {
+        &.money {
+          .icon {
+            background-color: $alt-blue-color;
+          }
+          .progress {
+            background-color: $alt-blue-color;
+            & > span {
+              span {
+                &::after {
+                  border-color: $blue-color transparent transparent;
+                }
+              }
+            }
+          }
+        }
+        &.projects {
+          .icon {
+            background-color: $alt-orange-color;
+          }
+          .progress {
+            background-color: $alt-orange-color;
+            & > span {
+              span {
+                &::after {
+                  border-color: $orange-color transparent transparent;
+                }
+              }
+            }
+          }
+        }
+        &.team {
+          .icon {
+            background-color: $alt-green-color;
+          }
+          .progress {
+            background-color: $alt-green-color;
+            & > span {
+              span {
+                &::after {
+                  border-color: $green-color transparent transparent;
+                }
+              }
+            }
+          }
+        }
+        .icon {
+          width: 80px;
+          height: 80px;
+          margin-right: 1rem;
+        }
+        .details {
+          flex: 1;
+          .progress {
+            height: 6px;
+            border-radius: 10px;
+            & > span {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              span {
+                position: absolute;
+                right: -16px;
+                bottom: 15px;
+                padding: 0 5px;
+                font-size: 12px;
+                color: white;
+                width: 32px;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  bottom: -12px;
+                  border-width: 6px;
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .tickets {
+      .boxes {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+        .box {
+          border: 1px solid $gray-color;
+        }
+      }
+    }
+    .latest-news {
+      .news-row {
+        &:not(:last-of-type) {
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid $gray-color;
+        }
+        img {
+          width: 100px;
+          border-radius: 6px;
+          margin-right: 1rem;
+        }
+        .info {
+          flex-grow: 1;
+          h3 {
+            margin: 0 0 5px;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .tasks {
+      .task-row {
+        &.done {
+          opacity: 0.7;
+          h3,
+          p {
+            text-decoration: line-through;
+          }
+        }
+        &:not(:last-of-type) {
+          margin-bottom: 15px;
+          padding-bottom: 15px;
+          border-bottom: 1px solid $gray-color;
+        }
+        .info {
+          flex-grow: 1;
+        }
+        .delete {
+          color: $red-color;
+          cursor: pointer;
+          &:hover {
+            color: $alt-red-color;
+          }
+        }
+      }
+    }
+  }
+
+  .projects {
+    text-transform: capitalize;
+    margin: 0 20px 20px;
+    .table-responsive {
+      overflow-x: auto;
+      table {
+        min-width: 1000px;
+        thead {
+          td {
+            background-color: $light-color;
+            font-weight: bold;
+          }
+        }
+        tbody {
+          td {
+            border-bottom: 1px solid $light-color;
+            border-left: 1px solid $light-color;
+            &:last-child {
+              border-right: 1px solid $light-color;
+            }
+          }
+        }
+        td {
+          padding: 15px;
+        }
+        img {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          &:not(:first-child) {
+            margin-left: -20px;
+          }
+        }
+        .label.pending {
+          background-color: $orange-color;
+        }
+        .label.approving {
+          background-color: $green-color;
+        }
+        .label.deleted {
+          background-color: $red-color;
         }
       }
     }
