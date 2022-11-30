@@ -8,6 +8,7 @@
 
 a {
   text-decoration: none;
+
   &:hover {
     text-decoration: none;
   }
@@ -44,6 +45,7 @@ textarea {
   color: white;
   border-radius: 6px;
   cursor: pointer;
+
   &:hover {
     background-color: $alt-color;
   }
@@ -53,8 +55,10 @@ textarea {
   max-height: 100vh;
   background-color: $light-color;
   padding-bottom: 1rem;
+
   h1 {
     margin: 20px 20px 40px;
+
     &::before,
     &::after {
       content: "";
@@ -63,25 +67,31 @@ textarea {
       bottom: -5px;
       left: 0;
     }
+
     &::before {
       background-color: white;
       width: 120px;
     }
+
     &::after {
       background-color: $black-color;
       width: 40px;
     }
   }
 }
+
 ::-webkit-scrollbar {
   width: 5px;
 }
+
 ::-webkit-scrollbar-track {
   background-color: $white-color;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: $main-color;
   border-radius: 10px;
+
   &:hover {
     background-color: $alt-color;
   }

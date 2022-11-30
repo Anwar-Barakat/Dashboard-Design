@@ -1,57 +1,68 @@
 .sidebar {
-    overflow: hidden;
-    min-width: 210px;
-    .logo {
-        margin-bottom: 1rem;
-        img {
-            max-width: 35px;
-        }
-        span {
-            font-weight: 600;
-            font-size: 15px;
-        }
+  overflow: hidden;
+  min-width: 210px;
+
+  .logo {
+    margin-bottom: 1rem;
+
+    img {
+      max-width: 35px;
     }
+
     span {
-        display: block;
-        position: relative;
+      font-weight: 600;
+      font-size: 15px;
     }
-    ul {
-        li {
-            a {
-                margin-bottom: 0.4rem;
-                overflow: hidden;
-                &.active,
-                &:hover {
-                    color: $main-color;
-                    font-weight: 600;
-                    background-color: $light-color;
-                    span {
-                        padding-left: 0.25rem;
-                    }
-                }
-            }
+  }
+
+  span {
+    display: block;
+    position: relative;
+  }
+
+  ul {
+    li {
+      a {
+        margin-bottom: 0.4rem;
+        overflow: hidden;
+
+        &.active,
+        &:hover {
+          color: $main-color;
+          font-weight: 600;
+          background-color: $light-color;
+
+          span {
+            padding-left: 0.25rem;
+          }
         }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .sidebar {
-        width: 84px;
-        min-width: initial;
-        &:hover {
-            width: 250px;
-            span {
-                right: initial;
-            }
-        }
-        .logo {
-            img {
-                max-width: 38px;
-                max-height: 35px;
-            }
-        }
-        span {
-            right: -150%;
-        }
+  .sidebar {
+    width: 84px;
+    min-width: initial;
+
+    &:hover {
+      width: 250px;
+
+      span {
+        right: initial;
+      }
     }
+
+    .logo {
+      img {
+        max-width: 38px;
+        max-height: 35px;
+      }
+    }
+
+    span {
+      right: -150%;
+    }
+  }
 }

@@ -1,61 +1,69 @@
 .head {
-    .search {
-        border: 1px solid $gray-color;
-        padding: 3px 1rem;
-        border-radius: 1rem;
+  .search {
+    border: 1px solid $gray-color;
+    padding: 3px 1rem;
+    border-radius: 1rem;
+    color: $black-color;
+
+    &::before {
+      content: "\f002";
+      font-family: var(--fa-style-family-classic);
+      font-weight: 900;
+      font-size: 14px;
+    }
+
+    input {
+      border: none;
+      max-width: 140px;
+
+      &:focus {
         color: $black-color;
-        &::before {
-            content: "\f002";
-            font-family: var(--fa-style-family-classic);
-            font-weight: 900;
-            font-size: 14px;
-        }
-        input {
-            border: none;
-            max-width: 140px;
-            &:focus {
-                color: $black-color;
-            }
-            &::placeholder {
-                color: $gray-color;
-            }
-        }
+      }
+
+      &::placeholder {
+        color: $gray-color;
+      }
     }
-    .icons {
-        .notification {
-            &::before {
-                content: "";
-                position: absolute;
-                width: 10px;
-                height: 10px;
-                background-color: $orange-color;
-                border-radius: 50%;
-                top: -2px;
-                left: -4px;
-            }
-        }
-        img {
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-        }
+  }
+
+  .icons {
+    .notification {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: $orange-color;
+        border-radius: 50%;
+        top: -2px;
+        left: -4px;
+      }
     }
+
+    img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+  }
 }
+
 .wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    margin-right: 20px;
-    margin-left: 20px;
-    text-transform: capitalize;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  margin-right: 20px;
+  margin-left: 20px;
+  text-transform: capitalize;
 }
 
 @media screen and (max-width: 768px) {
-    .head .search input {
-        max-width: 60px;
-    }
-    .wrapper {
-        grid-template-columns: minmax(200px, 1fr);
-        margin-right: 10px;
-        margin-left: 10px;
-        gap: 10px;
-    }
+  .head .search input {
+    max-width: 60px;
+  }
+
+  .wrapper {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-right: 10px;
+    margin-left: 10px;
+    gap: 10px;
+  }
 }

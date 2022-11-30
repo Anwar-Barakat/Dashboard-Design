@@ -655,6 +655,7 @@ textarea {
 
 .content .wrapper .latest-news .news-row img {
   width: 100px;
+  height: 60px;
   border-radius: 6px;
   margin-right: 1rem;
 }
@@ -702,7 +703,6 @@ textarea {
 
 .content .projects {
   text-transform: capitalize;
-  margin: 0 20px 20px;
 }
 
 .content .projects .table-responsive {
@@ -739,6 +739,10 @@ textarea {
 
 .content .projects .table-responsive table img:not(:first-child) {
   margin-left: -20px;
+}
+
+.content .projects .table-responsive table .label {
+  padding: 0px 6px;
 }
 
 .content .projects .table-responsive table .label.pending {

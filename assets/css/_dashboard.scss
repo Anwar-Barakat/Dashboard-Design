@@ -139,6 +139,7 @@
         }
         img {
           width: 100px;
+          height: 60px;
           border-radius: 6px;
           margin-right: 1rem;
         }
@@ -181,7 +182,6 @@
 
   .projects {
     text-transform: capitalize;
-    margin: 0 20px 20px;
     .table-responsive {
       overflow-x: auto;
       table {
@@ -211,6 +211,9 @@
           &:not(:first-child) {
             margin-left: -20px;
           }
+        }
+        .label {
+          padding: 0px 6px;
         }
         .label.pending {
           background-color: $orange-color;
