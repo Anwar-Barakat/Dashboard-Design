@@ -151,6 +151,12 @@
   .mobile-margin-auto {
     margin: auto;
   }
+  .p-20 {
+    padding: 10px;
+  }
+  .content .wrapper {
+    margin: 0 10px 10px;
+  }
 }
 
 .bg-white {
@@ -546,7 +552,7 @@ textarea {
 .content .wrapper .welcome .visit {
   background-color: #831a95;
   margin: 0 15px 15px auto;
-  padding: 3px 1rem;
+  padding: 7px 1rem;
 }
 
 .content .wrapper .welcome .visit:hover {
@@ -703,6 +709,7 @@ textarea {
 
 .content .projects {
   text-transform: capitalize;
+  margin: 0 20px;
 }
 
 .content .projects .table-responsive {
@@ -760,6 +767,18 @@ textarea {
 @media screen and (max-width: 768px) {
   .welcome .intro {
     padding-bottom: 30px;
+  }
+  .task-row {
+    display: -ms-grid;
+    display: grid;
+  }
+  .content .wrapper .tasks .task-row .delete {
+    display: block;
+    margin: auto;
+  }
+  .content .wrapper,
+  .content .projects {
+    margin: 0 10px;
   }
 }
 /*# sourceMappingURL=master.css.map */

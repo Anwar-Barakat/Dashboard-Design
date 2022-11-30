@@ -28,7 +28,7 @@
       .visit {
         background-color: $main-color;
         margin: 0 15px 15px auto;
-        padding: 3px 1rem;
+        padding: 7px 1rem;
         &:hover {
           background-color: $alt-color;
         }
@@ -182,6 +182,7 @@
 
   .projects {
     text-transform: capitalize;
+    margin: 0 20px;
     .table-responsive {
       overflow-x: auto;
       table {
@@ -232,5 +233,16 @@
 @media screen and (max-width: 768px) {
   .welcome .intro {
     padding-bottom: 30px;
+  }
+  .task-row {
+    display: grid;
+  }
+  .content .wrapper .tasks .task-row .delete {
+    display: block;
+    margin: auto;
+  }
+  .content .wrapper,
+  .content .projects {
+    margin: 0 10px;
   }
 }
