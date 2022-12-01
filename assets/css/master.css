@@ -571,15 +571,15 @@ textarea {
   border-color: #03a9f4 transparent transparent;
 }
 
-.content .wrapper .targets .target-row.projects .icon {
+.content .wrapper .targets .target-row.project .icon {
   background-color: #f59e0b20;
 }
 
-.content .wrapper .targets .target-row.projects .progress {
+.content .wrapper .targets .target-row.project .progress {
   background-color: #f59e0b20;
 }
 
-.content .wrapper .targets .target-row.projects .progress > span span::after {
+.content .wrapper .targets .target-row.project .progress > span span::after {
   border-color: #f59e0b transparent transparent;
 }
 
@@ -778,7 +778,7 @@ textarea {
   }
   .content .wrapper,
   .content .projects {
-    margin: 0 10px;
+    margin: 10px;
   }
 }
 /*# sourceMappingURL=master.css.map */
